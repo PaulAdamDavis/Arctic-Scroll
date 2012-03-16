@@ -61,6 +61,14 @@ If you need to scroll to a set point, just use a `data-position` attribute inste
 
 ---
 
+## iFrame Example
+
+From [JSBin](http://jsbin.com/izocuz)
+
+<iframe src="http://jsbin.com/izocuz" style="width: 100%; height: 800px; border: 0;" ></iframe>
+
+---
+
 ## Todo
 
 * Add easing
