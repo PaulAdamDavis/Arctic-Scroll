@@ -63,7 +63,7 @@ If you need to scroll to a set point, just use a `data-position` attribute inste
 
 ## Working Example
 
-For now, the example is on JSBin ([(http://jsbin.com/izocuz)](http://jsbin.com/izocuz)) just for convience. When I luanch my new website, a labs section will exist where a proper example will sit.
+For now, the example is on JSBin ([http://jsbin.com/izocuz](http://jsbin.com/izocuz)) just for convience. When I luanch my new website, a labs section will exist where a proper example will sit.
 
 ---
 
