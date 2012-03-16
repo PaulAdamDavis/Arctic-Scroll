@@ -49,6 +49,7 @@ A simple but more useful internal link scroller with options. Code by [@pauladam
 
 	<a href="#example" class="arctic_scroll">Example</a>
 	<a href="#moreexample" class="arctic_scroll" data-offset="100">Example</a>
+	<a href="#last" class="arctic_scroll" data-position="1234">Example</a>
 
 ---
 
