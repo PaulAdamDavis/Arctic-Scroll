@@ -45,6 +45,13 @@ A simple but more useful internal link scroller with options. Code by [@pauladam
 
 ---
 
+## Usage
+
+	<a href="#example" class="arctic_scroll">Example</a>
+	<a href="#moreexample" class="arctic_scroll" data-offset="100">Example</a>
+
+---
+
 ## Todo
 
 * Add easing
