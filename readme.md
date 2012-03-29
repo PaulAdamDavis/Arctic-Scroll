@@ -67,6 +67,12 @@ For now, the example is on JSBin ([http://jsbin.com/izocuz](http://jsbin.com/izo
 
 ---
 
+## Sites using Arctic Scroll
+
+* [G'Nosh](http://gnosh.co.uk)
+
+---
+
 ## Todo
 
 * Add easing
