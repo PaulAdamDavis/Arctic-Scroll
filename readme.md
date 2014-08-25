@@ -79,6 +79,7 @@ For now, the example is on JSBin ([http://jsbin.com/izocuz](http://jsbin.com/izo
 
 ## Sites using Arctic Scroll
 
+* [Casper (Default Ghost theme)](https://github.com/TryGhost/Casper)
 * [G'Nosh](http://gnosh.co.uk)
 
 ---
