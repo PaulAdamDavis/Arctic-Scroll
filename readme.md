@@ -2,6 +2,8 @@
 
 An MIT licensed simple but useful internal link scroller with options
 
+**[Demo](http://pauladamdavis.github.io/Arctic-Scroll/)**
+
 ---
 
 ## Initialization
