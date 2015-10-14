@@ -2,12 +2,12 @@
 <html>
     <head>
     <title>Artic Scroll</title>
-    <meta charset="utf-8"> 
-    <!--[if IE]>  
+    <meta charset="utf-8">
+    <!--[if IE]>
             <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]--> 
+    <![endif]-->
     <style>
-        html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video {margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent;}body {line-height:1;}article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary {display:block;}nav ul {list-style:none;}blockquote,q {quotes:none;}blockquote:before,blockquote:after,q:before,q:after {content:'';content:none;}a {margin:0;padding:0;border:0;font-size:100%;vertical-align:baseline;background:transparent;}ins {background-color:#ff9;color:#000;text-decoration:none;}mark {background-color:#ff9;color:#000;font-style:italic;font-weight:bold;}del {text-decoration: line-through;}abbr[title],dfn[title] {border-bottom:1px dotted #000;cursor:help;}table {border-collapse:collapse;border-spacing:0;}hr {display:block;height:1px;border:0;border-top:1px solid #cccccc;margin:1em 0;padding:0;}input,select {vertical-align:middle;}* {outline: none;} .clear {clear: both;}
+        /*html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video {margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent;}body {line-height:1;}article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary {display:block;}nav ul {list-style:none;}blockquote,q {quotes:none;}blockquote:before,blockquote:after,q:before,q:after {content:'';content:none;}a {margin:0;padding:0;border:0;font-size:100%;vertical-align:baseline;background:transparent;}ins {background-color:#ff9;color:#000;text-decoration:none;}mark {background-color:#ff9;color:#000;font-style:italic;font-weight:bold;}del {text-decoration: line-through;}abbr[title],dfn[title] {border-bottom:1px dotted #000;cursor:help;}table {border-collapse:collapse;border-spacing:0;}hr {display:block;height:1px;border:0;border-top:1px solid #cccccc;margin:1em 0;padding:0;}input,select {vertical-align:middle;}* {outline: none;} .clear {clear: both;}*/
         body {
             font-size: 14px;
             line-height: 20px;
@@ -67,12 +67,16 @@
             background-color: none;
             padding: 0;
         }
+        hr {
+            border: 0;
+            border-bottom: 1px solid #ccc;
+        }
         .fade_out {
             opacity: 0.5;
         }
     </style>
 </head>
-<body> 
+<body>
 
     <nav>
         <a href="#home" class="arctic_scroll">Home</a>
@@ -120,10 +124,10 @@
         };
         var options = $.extend(defaults, options);
 
-        options.elem.click(function(event){     
+        options.elem.click(function(event){
             event.preventDefault();
             var offset = ($(this).attr('data-offset')) ? $(this).attr('data-offset') : false,
-                position = ($(this).attr('data-position')) ? $(this).attr('data-position') : false;         
+                position = ($(this).attr('data-position')) ? $(this).attr('data-position') : false;
             if (offset) {
                 var toMove = parseInt(offset);
                 $('html,body').stop(true, false).animate({scrollTop: ($(this.hash).offset().top + toMove) }, options.speed);
@@ -148,7 +152,7 @@
 </code></pre>
     </section>
 
-    <script src="jquery.1.7.1.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="jquery.arctic_scroll.js"></script>
     <script>
         $(function(){
@@ -157,6 +161,6 @@
             });
         });
     </script>
- 
+
 </body>
 </html>
