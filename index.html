@@ -2,41 +2,46 @@
 <html>
     <head>
     <title>Artic Scroll</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
     <meta charset="utf-8">
-    <!--[if IE]>
-            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
     <style>
-        /*html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video {margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent;}body {line-height:1;}article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary {display:block;}nav ul {list-style:none;}blockquote,q {quotes:none;}blockquote:before,blockquote:after,q:before,q:after {content:'';content:none;}a {margin:0;padding:0;border:0;font-size:100%;vertical-align:baseline;background:transparent;}ins {background-color:#ff9;color:#000;text-decoration:none;}mark {background-color:#ff9;color:#000;font-style:italic;font-weight:bold;}del {text-decoration: line-through;}abbr[title],dfn[title] {border-bottom:1px dotted #000;cursor:help;}table {border-collapse:collapse;border-spacing:0;}hr {display:block;height:1px;border:0;border-top:1px solid #cccccc;margin:1em 0;padding:0;}input,select {vertical-align:middle;}* {outline: none;} .clear {clear: both;}*/
+        *,
+        *:before,
+        *:after{
+            box-sizing: border-box;
+        }
         body {
-            font-size: 14px;
-            line-height: 20px;
+            font-size: 16px;
+            line-height: 1.5;
             font-family: Helvetica, sans-serif;
-            width: 600px;
             margin: 0 auto;
         }
         nav {
             position: fixed;
-            background-color: #c03;
-            padding: 7px 5px;
+            background-color: #4E818A;
+            padding: 7px 12px;
         }
         nav a {
             color: #fff;
             text-decoration: none;
             display: inline-block;
-            padding: 0 5px;
         }
-        article, section {
+        nav a + a {
+            margin-left: 15px;
+        }
+        article, section, footer {
             display: block;
-            padding: 50px 0px;
-            margin: 0;
+            padding: 50px 15px;
+            margin: 0 auto 50vh;
+            width: 100%;
+            max-width: 600px;
         }
-        .spaced_out {
-            margin: 1000px 0;
+        footer {
+            margin-bottom: 0;
         }
         h1 {
-            font-size: 60px;
-            line-height: 70px;
+            font-size: 48px;
+            line-height: 1.5;
             border-bottom: 1px solid #ccc;
             margin-bottom: 20px;
             padding-bottom: 10px;
@@ -71,86 +76,35 @@
             border: 0;
             border-bottom: 1px solid #ccc;
         }
-        .fade_out {
-            opacity: 0.5;
-        }
     </style>
 </head>
 <body>
 
     <nav>
-        <a href="#home" class="arctic_scroll">Home</a>
-        <a href="#example" class="arctic_scroll">Example</a>
-        <a href="#code" class="arctic_scroll">Code</a>
-        <a href="#" class="arctic_scroll fade_out" data-position="100">Scrol to 100px</a>
+        <a href="#top" class="arctic_scroll">Top</a>
+        <a href="#down" class="arctic_scroll">Down</a>
+        <a href="#further" class="arctic_scroll">Further</a>
+        <a href="#" class="arctic_scroll" data-position="100">Scrol to 100px</a>
     </nav>
 
-    <section id="home">
+    <section id="top">
         <h1>Arctic Scroll</h1>
-        <p>A <b>jQuery</b> plugin, so cool, it's arctic!<br>By <a href="http://twitter.com/pauladamdavis">@pauladamdavis</a></p>
-        <hr>
-        <p>This internal link scroller scrolls down the page as many simple scripts, but allows you to add an offset.</p>
-        <p>Say you want to scroll to a div, but leave 100px of space before the element for a graphic, just add an offset as a data attribute.</p>
+        <p>A jQuery plugin, so cool, it's arctic! <b>See the <a href="https://github.com/PaulAdamDavis/Arctic-Scroll">GitHub repo</a></b></p>
     </section>
 
-    <section id="example" class="spaced_out">
-        <h1>An Example <span>Or Two</span></h1>
-
-        <h3>Generic application</h3>
-        <p>Simply add the class and offset if desired and you're set.</p>
-        <p>An offset of <code>-100</code> means the scroller takes 100 pixels off the amount to be scrolled, leaving a gap.</p>
-        <p>Using a positive number like <code>+100</code> or simply <code>100</code> means the page scrolls an extra 100 pixels past the top left of the desired element target with the ID in the href attribute.</p>
-        <pre><code>&lt;a href="#example" class="arctic_scroll" data-offset="60"&gt;Example&lt;/a&gt;</code></pre>
-
-        <hr>
-
-        <h3>Define absolute position</h3>
-        <p>If you need to scroll to a set point, just use a <code>data-position</code> attribute instead.</p>
-        <pre><code>&lt;a href="#example" class="arctic_scroll" data-position="1200"&gt;Example&lt;/a&gt;</code></pre>
-
+    <section id="down">
+        <h1>Down</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum tenetur magnam, fuga aspernatur quos facilis, nisi. Adipisci fuga ducimus, hic dolores praesentium minus dicta reiciendis magni nulla, sequi inventore doloribus, ab placeat consequatur laborum laudantium quaerat sunt consectetur in recusandae dolorem. Exercitationem a commodi repellat blanditiis tempora, recusandae qui, aliquam?</p>
     </section>
 
-    <section id="code" class="spaced_out">
-        <h1>The Code</h1>
-        <p>Open source, on GitHub, no warranty, provided <b>as it</b> yeah yeah yeah.</p>
-        <hr>
-        <h3>The Plugin</h3>
-        <pre><code>(function ($) {
-    $.fn.arctic_scroll = function (options) {
-
-        var defaults = {
-            elem: $(this),
-            speed: 500
-        };
-        var options = $.extend(defaults, options);
-
-        options.elem.click(function(event){
-            event.preventDefault();
-            var offset = ($(this).attr('data-offset')) ? $(this).attr('data-offset') : false,
-                position = ($(this).attr('data-position')) ? $(this).attr('data-position') : false;
-            if (offset) {
-                var toMove = parseInt(offset);
-                $('html,body').stop(true, false).animate({scrollTop: ($(this.hash).offset().top + toMove) }, options.speed);
-            } else if (position) {
-                var toMove = parseInt(position);
-                $('html,body').stop(true, false).animate({scrollTop: toMove }, options.speed);
-            } else {
-                $('html,body').stop(true, false).animate({scrollTop: ($(this.hash).offset().top) }, options.speed);
-            }
-        });
-
-    };
-})(jQuery);</code></pre>
-        <hr>
-        <h3>The initialization</h3>
-        <p>Just choose your CSS selector and then call the plugin. There's only one option; speed. Its default is 500ms, set to 800 in the below example.</p>
-        <pre><code>$(function(){
-    $(".arctic_scroll").arctic_scroll({
-        speed: 800
-    });
-});
-</code></pre>
+    <section id="further">
+        <h1>Further</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis fuga porro aspernatur qui laboriosam dolorem. Deserunt aperiam perspiciatis quo architecto at, veritatis libero. Ex velit, nobis delectus molestiae ut! Quidem nihil blanditiis, facere totam consequuntur unde quia dolorum iste laudantium doloribus consequatur dolorem dolor voluptas in labore, sint! Alias, neque!</p>
     </section>
+
+    <footer>
+        <p>Did you like that?</p>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="jquery.arctic_scroll.js"></script>
